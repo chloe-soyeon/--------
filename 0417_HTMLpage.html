@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML 5 Basic</title>
+        <!--<link rel="stylesheet" href="css/style.css">-->
+        <!--<script src="script.js"></script>-->
+        <style>
+           body {background:url(images.jpg) no-repeat 500px}
+           #container {position: relative;}
+           #contatiner div {display: none;}
+           #container div {position:absolute; top: 150px; left: 150px;}
+           #container.blue{background-color: blue;}
+           #container.red{background-color:red;}
+           #container.greenyellow{background-color:greenyellow;}
+           #container.pos1 {top: 150px; left: 150px; z-index: 100;}
+           #container.pos2 {top: 200px; left: 200px;}
+           .f11{width: 100px; height: 100px; background: palevioletred;}
+           .f12{width: 100px; height: 100px;background: rgb(212, 59, 110);}
+           .f13{width: 100px; height: 100px; background:rgb(156, 6, 56);}
+           .f14{width: 100px; height: 100px; background:linear-gradient(to bottom, rgb(243, 184, 238) 0%, rgb(226, 49, 250) 100%);}
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <div id="container">
+                    <span>잔망루피</span>
+                    <div class="hidden">호롤로로</div>
+                    <span>호잇</span>
+                    <div class="red">호이이잇</div>
+                    <div class="blue">호오옹</div>
+                    <div class="red">두둥</div>
+                    <div class="greenyellow">두둥탁</div>
+                </div>
+                <h1 id="sub" class="subject">실습</h1>
+                <h2>강의</h2>
+                <div>
+                    <a href="#">링크 실습</a>
+                    <a href="#">링크 실습</a>
+                </div>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+                <div>
+                    <input type="radio" name="radio" id="r1">
+                    <label for="r1">1</label>
+                    <input type="radio" name="radio" id="r2">
+                    <label for="r2">2</label>
+                    <input type="radio" name="radio" id="r3">
+                    <label for="r3">3</label>
+                    <input type="radio" name="radio" id="r4">
+                    <label for="r4">4</label>
+                    <input type="radio" name="radio" id="r5">
+                    <label for="r5">5</label>
+                </div>
+            </header>
+            <div id="container">
+                <section>
+                    <article>
+                        <form>
+                            <fieldset>
+                                <legend></legend>
+                                <table width="100%" border="1">
+                                    <tbody>
+                                        <tr>
+                                            <th><label for="name">이름</label></th>
+                                            <td><input type="text" id="name"></td>
+                                        </tr>
+                                        <tr>
+                                            <th><label for="id">아이디</label></th>
+                                            <td>
+                                                <input type="password" id="id" placeholder="영문, 숫자 4-10글자 내외">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </fieldset>
+                        </form>
+                    </article>
+
+                    <article>
+                        내용2
+                    </article>
+                </section>
+            </div>
+            <footer>
+                <div class="f11">딸</div>
+                <div class="f12">기</div>
+                <div class="f13">맛</div>
+                <div class="f14">무지개떡</div>
+            </footer>
+        </div>
+    </body>
+</html>
